@@ -1,0 +1,85 @@
+.iconRed{
+    background-color: #e74c3c;
+}
+.iconGreen {
+    background-color: #2ecc71;
+}
+.iconBlue {
+    background-color: #3498db;
+}
+
+.timelineArea{
+    position: relative;
+    z-index: 1;
+    padding-left: 180px;
+}
+@media only screen and (max-width: 575px) {
+    .timelineArea{
+        padding-left: 100px;
+    }
+}
+.timelineArea .timelineNumber {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+@media only screen and (max-width: 575px) {
+    .timelineArea .timelineNumber {
+        width: 100px;
+    }
+}
+.timelineArea .timelineNumber::after {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #ebebeb;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+}
+.timelineArea .timelineNumber::before {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #f1c40f;
+    content: "";
+    top: 50%;
+    right: 26px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+
+.timelineArea .timelineContent {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 25px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid #ebebeb;
+
+}
+@media only screen and (max-width: 575px) {
+    .timelineArea .timelineContent {
+        padding: 20px;
+    }
+}
+
+.timelineArea .timelineContent .icon{
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    text-align: center;
+    max-width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
